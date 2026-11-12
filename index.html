@@ -3,128 +3,158 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio of Khawulele Duma Makopi, software developer, database specialist and AI developer.">
-  <title>Khawulele Duma Makopi | Software Developer</title>
+  <meta name="description" content="Khawulele Duma Makopi — software developer building full-stack systems, React interfaces, Moodle learning platforms, gamified products, AI tools and database-driven workflows.">
+  <meta name="theme-color" content="#090909">
+  <title>Khawulele Duma Makopi — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top">KDM<span>.</span></a>
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">Menu</button>
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <header class="topbar" id="top">
+    <a class="mark" href="#top" aria-label="Khawulele Duma Makopi home">
+      <span>K</span><span>D</span><span>M</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="contact-pill" href="assets/Khawulele-Duma-Makopi-CV.pdf" download>Download CV <span>↗</span></a>
+    <button class="menu-button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      <a href="assets/Khawulele-Duma-Makopi-CV.pdf" download>Download CV ↗</a>
     </nav>
   </header>
 
-  <main id="top">
-    <section class="hero section">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">Software Developer · Database Specialist · AI Developer</p>
-        <h1>I build practical systems that turn complex work into clear digital workflows.</h1>
-        <p class="hero-text">I develop PHP/MySQL business applications, AI-powered tools, learning platforms, NFC attendance systems, dashboards, APIs and workflow automations.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#projects">View Projects</a>
-          <a class="button secondary" href="assets/Khawulele-Duma-Makopi-CV.pdf" download>Download CV</a>
+  <main>
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-meta"><span>Software developer</span><span>South Africa · <b id="local-time">--:--</b></span></div>
+      <div class="hero-stage">
+        <h1 id="hero-title" class="hero-left reveal">I design it.</h1>
+        <div class="hero-object reveal" data-tilt aria-hidden="true">
+          <div class="object-shadow"></div>
+          <div class="block block-k">K</div>
+          <div class="block block-d">D</div>
+          <div class="block block-m">M</div>
+          <div class="wire wire-k">K</div>
+          <div class="wire wire-m">M</div>
+          <div class="axis axis-a"></div><div class="axis axis-b"></div>
         </div>
-        <div class="contact-strip">
-          <a href="tel:+27766852529">076 685 2529</a>
-          <a href="mailto:khawulelemakopi888@gmail.com">khawulelemakopi888@gmail.com</a>
+        <h2 class="hero-right reveal">I build it.</h2>
+      </div>
+      <div class="hero-footer">
+        <div class="hero-summary reveal">
+          <p>I turn operational problems into working digital products — from database architecture and APIs to responsive interfaces, LMS platforms, gamified learning and AI-assisted workflows.</p>
+          <span>Software development · databases · LMS · automation · AI integration</span>
+        </div>
+        <div class="hero-scroll reveal"><strong>000°</strong><span>Scroll to explore the work</span></div>
+        <a class="hero-cta reveal" href="#contact">Get in touch <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Technology stack"><div>React <i>◆</i> TypeScript <i>◆</i> PHP <i>◆</i> MySQL <i>◆</i> JavaScript <i>◆</i> Moodle <i>◆</i> APIs <i>◆</i> Gamification <i>◆</i> AI/OCR <i>◆</i> Automation <i>◆</i> React <i>◆</i> TypeScript <i>◆</i> PHP <i>◆</i> MySQL <i>◆</i></div></section>
+
+    <section id="work" class="section shell">
+      <div class="section-intro reveal"><span>01 — Work</span><div><h2>The work.</h2><p>Selected products where I handled the technical build, user experience, data flow, deployment or all of the above.</p></div></div>
+
+      <article class="project project-large reveal">
+        <a class="project-image" href="https://learningportal.mikscubedfoundation.org/?redirect=0" target="_blank" rel="noopener">
+          <img src="assets/projects/mikscubed-lms-home.png" alt="MIKS Cubed K53 Learning Portal homepage">
+          <span>Live LMS ↗</span>
+        </a>
+        <div class="project-info"><div class="project-index">01 / 06</div><p class="eyebrow">Learning platform · Moodle</p><h3>MIKS Cubed K53 Learning Portal</h3><p>Designed and developed a branded K53 learning environment for South African learner drivers. The platform combines structured theory, course progress, quizzes, mock assessments, certificates and practical learning into a single learner journey.</p><ul><li>Moodle / Edwiser</li><li>PHP / MySQL</li><li>JavaScript</li><li>cPanel</li></ul></div>
+      </article>
+
+      <article class="project project-large project-flip reveal">
+        <a class="project-image project-image-split" href="https://learningportal.mikscubedfoundation.org/?redirect=0" target="_blank" rel="noopener">
+          <img src="assets/projects/mikscubed-drivequest-module.png" alt="DriveQuest module embedded in Moodle">
+          <img src="assets/projects/mikscubed-drivequest-game.png" alt="DriveQuest gamified K53 learning experience">
+          <span>Explore ↗</span>
+        </a>
+        <div class="project-info"><div class="project-index">02 / 06</div><p class="eyebrow">Gamification · Interactive learning</p><h3>DriveQuest</h3><p>Built the gamified practical layer of the K53 programme: road-safety quests, XP, achievements, vehicle-control challenges and scenario-based practice. The experience is integrated into the Moodle learning flow so practical play reinforces formal lessons and knowledge checks.</p><ul><li>JavaScript</li><li>Gamification</li><li>Interactive UI</li><li>Moodle integration</li></ul></div>
+      </article>
+
+      <article class="project project-large reveal">
+        <a class="project-image project-image-split" href="https://www.izala.co.za/" target="_blank" rel="noopener">
+          <img src="assets/projects/izala-home-2026.png" alt="Izala Verificators website homepage">
+          <img src="assets/projects/izala-services-2026.png" alt="Izala Verificators services section">
+          <span>Live site ↗</span>
+        </a>
+        <div class="project-info"><div class="project-index">03 / 06</div><p class="eyebrow">Corporate web · UI/UX</p><h3>Izala Verificators Group</h3><p>Redesigned and expanded the group website around clearer service architecture, stronger visual hierarchy and a more modern responsive experience across B-BBEE verification, forensic, trust and actuarial services.</p><ul><li>Wix</li><li>Responsive UI</li><li>Content architecture</li><li>Custom styling</li></ul></div>
+      </article>
+
+      <article class="project project-large project-flip reveal">
+        <a class="project-image" href="https://www.ivfs.co.za/" target="_blank" rel="noopener">
+          <img src="assets/projects/ivfs-live-2026.png" alt="IVFS Forensic Services website homepage">
+          <span>Live site ↗</span>
+        </a>
+        <div class="project-info"><div class="project-index">04 / 06</div><p class="eyebrow">React website · Forensic services</p><h3>IVFS Forensic Services</h3><p>Developed a responsive corporate site for forensic auditing and investigative consulting. The build uses a component-driven front end, bold service-focused navigation and a visual identity aligned to the broader Izala group.</p><ul><li>React</li><li>TypeScript</li><li>Responsive CSS</li><li>Component UI</li></ul></div>
+      </article>
+
+      <div class="project-grid reveal">
+        <article class="small-project"><a href="https://mikscubedfoundation.org/" target="_blank" rel="noopener"><img src="assets/projects/spike-lms.png" alt="MIKS Cubed Foundation and learning project"><span>05</span><h3>MIKS Cubed Foundation Website</h3><p>Public programme website and learner sign-up journey connected to the K53 learning platform.</p><b>Open website ↗</b></a></article>
+        <article class="small-project"><a href="https://nfmi.co.za/Izala/myUIF/" target="_blank" rel="noopener"><img src="assets/projects/uif-dashboard.png" alt="UIF audit verification dashboard"><span>06</span><h3>UIF Audit & Verification System</h3><p>PHP/MySQL verification workflow for documents, working papers, findings, dashboards and reporting.</p><b>Open system ↗</b></a></article>
+      </div>
+
+      <div class="more-work reveal">
+        <div class="more-head"><span>More work</span><p>Additional production and internal products.</p></div>
+        <a href="https://nfmi.co.za/sab-tap/index.php" target="_blank" rel="noopener"><strong>Spike & Bird NFC Attendance</strong><span>PHP · MySQL · NFC · CSV reporting</span><em>↗</em></a>
+        <a href="https://nfmi.co.za/MarkingTool/" target="_blank" rel="noopener"><strong>Digital Marking Tool</strong><span>Assessment workflow and automated marking support</span><em>↗</em></a>
+        <a href="https://nfmi.co.za/Izala/LMS/" target="_blank" rel="noopener"><strong>Izala LMS</strong><span>Learner administration and learning workflow</span><em>↗</em></a>
+        <div><strong>Mi-Summarizer</strong><span>OpenAI-powered summaries, presentations and document generation</span><em>Private</em></div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="shell">
+        <div class="section-intro light reveal"><span>02 — About</span><div><h2>The developer<br>who thinks in workflows.</h2></div></div>
+        <div class="about-grid">
+          <div class="portrait reveal"><img src="assets/profile.jpg" alt="Khawulele Duma Makopi"><span>Pretoria, South Africa</span></div>
+          <div class="about-copy reveal">
+            <p class="about-lead">I design the interface, structure the data and build the system behind it.</p>
+            <p>My strongest work starts with a messy operational process: scattered spreadsheets, manual approvals, disconnected systems or an unclear learner journey. I map the workflow, design the data and interface, then build something people can actually use.</p>
+            <div class="metrics"><div><strong>5+</strong><span>years across software, data and IT roles</span></div><div><strong>End-to-end</strong><span>requirements → database → interface → deployment</span></div><div><strong>Multi-stack</strong><span>React, PHP/MySQL, Moodle, APIs and AI</span></div></div>
+          </div>
         </div>
       </div>
-      <div class="portrait-wrap reveal">
-        <div class="portrait-frame"><img src="assets/profile.jpg" alt="Portrait of Khawulele Duma Makopi"></div>
-        <div class="availability">Based in Pretoria, South Africa</div>
+    </section>
+
+    <section class="section shell capabilities">
+      <div class="section-intro reveal"><span>03 — Capabilities</span><div><h2>Design. Build. Ship.</h2><p>One workflow from problem definition to a production-ready system.</p></div></div>
+      <div class="cap-list">
+        <article class="reveal"><span>01</span><h3>Full-stack systems</h3><p>PHP/MySQL applications, dashboards, document workflows, internal platforms and structured reporting.</p></article>
+        <article class="reveal"><span>02</span><h3>React & front-end</h3><p>Responsive React/TypeScript interfaces, component systems, public websites and polished UI implementation.</p></article>
+        <article class="reveal"><span>03</span><h3>LMS & gamification</h3><p>Moodle implementation, course architecture, learner journeys, quizzes, progress, certificates and interactive learning.</p></article>
+        <article class="reveal"><span>04</span><h3>AI & automation</h3><p>OpenAI integrations, OCR/document analysis, webhooks, APIs, JSON workflows and automated report generation.</p></article>
       </div>
     </section>
 
-    <section id="about" class="section two-column">
-      <div><p class="section-label">About</p><h2>Developer focused on useful, reliable systems.</h2></div>
-      <div class="body-copy">
-        <p>I am a software developer with experience building internal verification systems, database-driven dashboards, automated reports, AI document tools and learning platforms.</p>
-        <p>My approach combines full-stack development, database design, process automation and practical user experience. I enjoy solving operational problems and reducing repetitive manual work.</p>
-      </div>
-    </section>
-
-    <section id="skills" class="section panel-section">
-      <p class="section-label">Core capabilities</p>
-      <div class="skills-grid">
-        <article><h3>Full-stack development</h3><p>PHP, JavaScript, HTML, CSS, responsive interfaces and business workflows.</p></article>
-        <article><h3>Databases</h3><p>MySQL, SQL, schema design, imports, exports, data cleaning and reporting.</p></article>
-        <article><h3>AI and automation</h3><p>OpenAI API tools, OCR workflows, webhooks, JSON integrations and Make automation.</p></article>
-        <article><h3>Platforms</h3><p>Moodle, WordPress, cPanel, phpMyAdmin, REST APIs and PDF generation.</p></article>
-      </div>
-      <div class="tech-list" aria-label="Technology list">
-        <span>PHP</span><span>MySQL</span><span>SQL</span><span>JavaScript</span><span>Python</span><span>Java</span><span>C#</span><span>Moodle</span><span>OpenAI API</span><span>REST APIs</span><span>Dompdf</span><span>Make</span>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="section-heading"><div><p class="section-label">Selected work</p><h2>Featured projects</h2></div><p>Live projects and private operational systems created for real business use.</p></div>
-      <div class="projects-grid">
-        <article class="project-card featured">
-          <img src="assets/projects/uif-dashboard.png" alt="UIF audit and verification system dashboard">
-          <div class="project-content"><p class="project-type">Enterprise workflow system</p><h3>UIF Audit & Verification Management System</h3><p>A PHP/MySQL platform for employer records, working papers, interviews, supporting documents, review notes, reporting and AI-assisted conclusions.</p><div class="tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Dompdf</span></div><a href="https://nfmi.co.za/Izala/myUIF/" target="_blank" rel="noopener">Open live system</a></div>
-        </article>
-
-        <article class="project-card">
-          <img src="assets/projects/attendance-live.png" alt="Spike and Bird NFC attendance system">
-          <div class="project-content"><p class="project-type">NFC attendance platform</p><h3>Spike & Bird Tap Attendance</h3><p>A tablet-friendly system for NFC tap-in and tap-out, live attendance counts, card registration, daily logs and CSV exports.</p><div class="tags"><span>PHP</span><span>MySQL</span><span>Web NFC</span></div><a href="https://nfmi.co.za/sab-tap/index.php" target="_blank" rel="noopener">View live project</a></div>
-        </article>
-
-        <article class="project-card">
-          <img src="assets/projects/mi-summarizer.png" alt="Mi-Summarizer AI content generator">
-          <div class="project-content"><p class="project-type">AI productivity application</p><h3>Mi-Summarizer</h3><p>An AI tool that turns source material into PowerPoint presentations, Word documents, summaries, emails and reusable content packs.</p><div class="tags"><span>Python</span><span>OpenAI API</span><span>Streamlit</span></div><span class="private-label">Private internal application</span></div>
-        </article>
-
-        <article class="project-card">
-          <img src="assets/projects/nfmi-home.png" alt="NFMi corporate technology website">
-          <div class="project-content"><p class="project-type">Corporate technology website</p><h3>NFMi Digital Solutions Website</h3><p>A modern dark-themed corporate website presenting software, cloud, AI, automation, SaaS, DevOps, UI/UX and security services.</p><div class="tags"><span>PHP</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a href="https://nfmi.co.za/NFMi/public/index.php" target="_blank" rel="noopener">View live project</a></div>
-        </article>
-
-        <article class="project-card">
-          <img src="assets/projects/spike-lms.png" alt="Spike and Bird learning management system">
-          <div class="project-content"><p class="project-type">Learning management system</p><h3>Spike & Bird LMS</h3><p>A branded Moodle environment for online courses, assessments, learner progress, certificates and institutional workflows.</p><div class="tags"><span>Moodle</span><span>PHP</span><span>MySQL</span></div><a href="https://nfmi.co.za/spikeandbird/?redirect=0" target="_blank" rel="noopener">View live project</a></div>
-        </article>
-
-        <article class="project-card">
-          <img src="assets/projects/ivfs-home.png" alt="IVFS corporate website design">
-          <div class="project-content"><p class="project-type">Corporate website</p><h3>IVFS Forensic Services Website</h3><p>A bold, responsive website for forensic auditing, risk assessment, digital forensics, due diligence and advisory services.</p><div class="tags"><span>React</span><span>TypeScript</span><span>Responsive UI</span></div><span class="private-label">Local build · deployment pending</span></div>
-        </article>
-      </div>
-
-      <div class="more-projects">
-        <a href="https://nfmi.co.za/MarkingTool/" target="_blank" rel="noopener"><strong>Digital Marking Tool</strong><span>Assessment and marking workflow platform</span></a>
-        <a href="https://nfmi.co.za/Izala/LMS/" target="_blank" rel="noopener"><strong>Izala LMS</strong><span>Learning and learner administration platform</span></a>
-      </div>
-    </section>
-
-    <section id="experience" class="section experience-section">
-      <div><p class="section-label">Experience</p><h2>Professional journey</h2></div>
+    <section id="experience" class="section shell">
+      <div class="section-intro reveal"><span>04 — Experience</span><div><h2>Professional journey.</h2></div></div>
       <div class="timeline">
-        <article><div class="date">2024 — Present</div><h3>Software Developer / AI Developer · NFMi</h3><p>Building PHP/MySQL applications, AI tools, dashboards, reports, document workflows, APIs and learning platforms.</p></article>
-        <article><div class="date">2023 — 2024</div><h3>Database Specialist / Software Developer · RABS Investments</h3><p>Database management, data cleaning, testing, optimisation, reporting and WordPress/C# development support.</p></article>
-        <article><div class="date">2022 — 2023</div><h3>Data Analyst · Tusanang Training Academy</h3><p>Data interpretation, learner information management, project coordination and reporting.</p></article>
-        <article><div class="date">2021 — 2022</div><h3>Computer Technician · Gauteng City College</h3><p>Hardware, software, workstations, connectivity troubleshooting and user support.</p></article>
+        <article class="reveal"><span>2024 — Present</span><div><h3>Software Developer / AI Developer</h3><p>NFMi</p></div><p>Full-stack systems, websites, Moodle platforms, AI tools, dashboards, integrations and automation.</p></article>
+        <article class="reveal"><span>2023 — 2024</span><div><h3>Database Specialist / Software Developer</h3><p>RABS Investments</p></div><p>Database management, testing, optimisation, reporting, data cleaning and development support.</p></article>
+        <article class="reveal"><span>2022 — 2023</span><div><h3>Data Analyst</h3><p>Tusanang Training Academy</p></div><p>Data analysis, learner information management, project coordination and stakeholder reporting.</p></article>
+        <article class="reveal"><span>2021 — 2022</span><div><h3>Computer Technician</h3><p>Gauteng City College</p></div><p>Hardware, software, workstations, connectivity troubleshooting and user support.</p></article>
       </div>
+      <div class="education reveal"><span>Education</span><h3>IIE Diploma in IT in Software Development</h3><p>Varsity College · 2018</p></div>
     </section>
 
-    <section class="section education-section">
-      <p class="section-label">Education</p>
-      <div class="education-card"><h3>IIE Diploma in IT in Software Development</h3><p>Varsity College · 2018</p></div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <p class="section-label">Contact</p>
-      <h2>Let’s build something useful.</h2>
-      <p>Available for software development, database, automation, AI integration and technical support opportunities.</p>
-      <div class="contact-actions">
-        <a class="button primary" href="mailto:khawulelemakopi888@gmail.com">Email Khawulele</a>
-        <a class="button secondary" href="tel:+27766852529">Call 076 685 2529</a>
-      </div>
+    <section id="contact" class="contact-section shell reveal">
+      <span>05 — Contact</span>
+      <h2>Something<br>worth building?</h2>
+      <div class="contact-bottom"><div><p>I’m open to software development opportunities, product builds and technical collaboration.</p><a href="mailto:khawulelemakopi888@gmail.com">khawulelemakopi888@gmail.com ↗</a></div><div class="contact-actions"><a href="assets/Khawulele-Duma-Makopi-CV.pdf" download>Download CV ↓</a><a href="mailto:khawulelemakopi888@gmail.com">Get in touch ↗</a></div></div>
     </section>
   </main>
 
-  <footer><span>© <span id="year"></span> Khawulele Duma Makopi</span><a href="#top">Back to top</a></footer>
+  <footer class="shell"><span>© <b id="year"></b> Khawulele Duma Makopi</span><div><a href="tel:+27766852529">076 685 2529</a><a href="#top">Back to top ↑</a></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
